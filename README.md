@@ -51,10 +51,11 @@ Docker Hub (Image Registry)
 ### 2. Install Docker on EC2
 
 ```bash
-sudo yum update -y
-sudo amazon-linux-extras install docker -y
-sudo service docker start
+sudo dnf update -y
+sudo dnf install docker -y
+sudo systemctl start docker
 sudo systemctl enable docker
+
 ```
 
 ### 3. Exit and login back to your ec2 instance.
